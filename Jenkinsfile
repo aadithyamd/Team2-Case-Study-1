@@ -9,14 +9,14 @@ pipeline {
                 echo 'Installing dependencies'
                 sh 'ls -la'
                 sh 'pwd'
-                sh 'go version'
+                //sh 'go version'
             }
         }
         
         stage('Execute') {
             steps {
                 echo 'Compiling and building'
-                sh 'go run main.go'
+               // sh 'go run main.go'
             }
         }  
 }
