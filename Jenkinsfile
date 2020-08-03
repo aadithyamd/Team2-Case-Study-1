@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    tools {
-    //    go 'go1.14'
-    }
+//     tools {
+//     //    go 'go1.14'
+//     }
     stages {        
         stage('Pre Test') {
             steps {
