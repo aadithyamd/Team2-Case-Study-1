@@ -1,0 +1,10 @@
+FROM golang:1.14
+WORKDIR /usr/go-gin/app
+COPY . ./
+RUN go mod download
+
+EXPOSE 9001
+CMD ["go","run","cmd/ginAPI/main.go"]
+
+#EXPOSE 5051
+#CMD ["go","run","cmd/grpcServer/main.go"]
