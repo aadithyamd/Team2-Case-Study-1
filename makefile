@@ -43,11 +43,11 @@ protos:
 
 # rule to build gin-API-Client
 api:
-	go build -o bin/api cmd/API/main.go
+	go build -o bin/api cmd/ginAPI/main.go
 
 # rule to build gRPC-Server
 server:
-	go build -o bin/server cmd/SERVER/main.go
+	go build -o bin/server cmd/grpcServer/main.go
 
 # one single rule to build application ready to run
 app:
