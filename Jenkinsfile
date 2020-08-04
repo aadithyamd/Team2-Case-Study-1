@@ -28,6 +28,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'ls -la'
+                sh 'pwd'
                 sh 'go version'
                 sh 'go mod download'
                 sh 'make api'
