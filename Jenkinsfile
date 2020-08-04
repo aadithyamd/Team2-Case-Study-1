@@ -32,10 +32,10 @@ pipeline {
                 sh 'pwd'
                 sh 'go version'
                 sh 'export XDG_CACHE_HOME=/tmp/.cache'
-                sh 'echo $XDG_CACHE_HOME'
-                sh 'go mod download'
-                sh 'make api'
-                sh 'make server'
+                sh 'echo \$XDG_CACHE_HOME'
+                sh 'sudo go mod download'
+                sh 'sudo make api'
+                sh 'sudo make server'
             }
         }
     }
