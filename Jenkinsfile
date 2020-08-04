@@ -29,6 +29,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'go version'
+                sh 'go mod download'
                 sh 'make api'
                 sh 'make server'
             }
