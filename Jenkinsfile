@@ -9,7 +9,7 @@ pipeline {
                 echo 'Installing dependencies'
                 sh 'ls -la'
                 sh 'pwd'
-                sh 'go version'
+                go version
             }
         }
         
