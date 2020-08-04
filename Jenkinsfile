@@ -31,6 +31,7 @@ pipeline {
                 sh 'ls -la'
                 sh 'pwd'
                 sh 'go version'
+                sh 'export XDG_CACHE_HOME=/tmp/.cache'
                 sh 'go mod download'
                 sh 'make api'
                 sh 'make server'
